@@ -1,0 +1,1 @@
+I am a student at Mississippi State University majoring in Computer Engineering. I have developed skills in Python, C++, database management, and circuit design. I am also constantly learning and seeking to improve my knowledge and skills in these areas.
