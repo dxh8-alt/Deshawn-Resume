@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f5f5f5;
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            margin: 15px 0;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 25px;
+        }
+
+        .job-title, .project-name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .company-name {
+            color: #666;
+        }
+
+        .date {
+            color: #000000;
+            font-style: italic;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .skill-level {
+            height: 5px;
+            background-color: #ddd;
+            margin-top: 5px;
+        }
+
+        .skill-level-fill {
+            height: 100%;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deshawn Hill</h1>
+        <p>Email: dxh8@msstate.edu | Phone: (360) 632-4210</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+            <a href="https://github.com/yourusername">GitHub</a>
+        </div>
+    </header>
+
+    <section id="experience">
+        <h2> Professional Experience</h2>
+        <div class="experience-item">
+            <div class="job-title">Student Assistant</div>
+            <div class="company-name">Disability Resource Center at Mississippi State University</div>
+            <div class="date">August 2024 - Present</div>
+            <ul>
+                <li>Scheduled individual appointments with office personnel.</li>
+                <li>Entered student information utilizing Excel spreadsheets.</li>
+                <li>Managed and directed multiple phone lines utilizing effective communication skills.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Retail Sales Associate</div>
+            <div class="company-name">Dollar General</div>
+            <div class="date">December 2020 - August 2021</div>
+            <ul>
+                <li>Assisted customers with finding products and answering questions.</li>
+                <li>Maintained a clean and organized store environment.</li>
+                <li>Processed transactions accurately and efficiently.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Mississippi State University</h3>
+            <p>Bachelor of Science in Computer Engineering</p>
+            <div class="date">Expected Graduation: December 2025</div>
+            <p>Major GPA: 3.1</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="skill-name">SQL</div>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">C/C++</div>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Python</div>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Microsoft Office</div>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Database Management Systems(MySQL,Oracle)</div>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Circuit Design</div>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="width: 65%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Matlab</div>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="width: 60%"></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <div class="project-name">MySQL Database</div>
+            <p>Designed and implemented relational database schemas to optimize data storage and retrieval in MySQL.</p>
+            <p>Developed SQL queries to retrieve and manipulate data efficiently.</p>
+            <p>Performed regular backups to ensure data availability and minimize downtime during
+                system failures or maintenance.</p>
+            <p><strong>Technologies:</strong> MySQL, SQL</p>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2>Relevant Courses</h2>
+        <ul>
+            <li>Operating Systems</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Management</li>
+            <li>Introduction to Algorithms</li>
+            <li>Computer Organization and Architecture</li>
+        </ul>
+    </section>
+</body>
+</html>
